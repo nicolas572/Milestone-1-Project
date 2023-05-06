@@ -95,8 +95,8 @@ XXX IMPORTANT! USE THIS SPACE FOR THE SCHEDULE WE END UP MAKING IN CLASS AND ADD
 | Date | Goals |
 | ---- | ----- |
 | Mon. 5/01 | Create GitHub repository. Complete README.md. |
-| Wed. 5/03 |      |
-| Sat. 5/06 |      |
+| Wed. 5/03 | Diagnose Errors |
+| Sat. 5/06 | Fix errors, game progress |
 | Mon. 5/08 |      |
 | Wed. 5/10 |      |
 | Sat. 5/13 | Deploy to GitHub Pages. Submit completed project. Project presentations. |
