@@ -1,13 +1,12 @@
 //make sure canvas in initialized after page is loaded
-window.onload = function(){
-    const canvas = document.getElementById("gameBoard");
-    const ctx = canvas.getContext("2d");
-}
+const canvas = document.getElementById("gameBoard");
+const ctx = canvas.getContext("2d");
+const gameWidth = canvas.width;
+const gameHeight = canvas.height;
+
 
 const scoreText = document.querySelector("#scoreText");
 const resetBtn = document.querySelector("#resetBtn");
-const gameWidth = gameBoard.width;
-const gameHeight = gameBoard.height;
 const boardBackground = 'white';
 const dragonColor = 'green';
 const dragonBorder = 'black';
