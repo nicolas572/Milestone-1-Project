@@ -33,12 +33,39 @@ window.addEventListener('keydown', changeDirection);
 resetBtn.addEventListener('click', resetGame);
 
 gameStart();
-createFood();
-drawFood();
 
-function gameStart(){};
-function nextTick (){};
-function clearBoard (){};
+//food appears when game starts
+function gameStart(){
+    running = true
+    scoreText.textContent = score;
+    createFood();
+    drawFood();
+    nextTick();
+};
+
+//if-else statement for nextTick
+function nextTick (){
+    if(running) {
+        setTimeout(() => {
+            clearBoard();
+            drawFood();
+            moveDragon();
+            drawDragon();
+            checkGameOver();
+            nextTick();
+        }, 100);
+    }
+    else{
+        displayGameOver();
+    }
+};
+
+function clearBoard (){
+    ctx.fillStyle = boardBackground;
+    ctx.fillRect(0, 0, gameWidth, gameHeight);
+};
+
+//random food appear on screen
 function createFood (){
     function randomFood(min, max){
         const randNum = Math.round((Math.random() * (max - min) + min) / unitSize) * unitSize;
@@ -53,7 +80,16 @@ function drawFood (){
     ctx.fillRect(foodX, foodY, unitSize, unitSize);
 };
 function moveDragon (){};
-function drawDragon (){};
+
+//create dragon!
+function drawDragon (){
+    ctx.fillStyle = dragonColor;
+    ctx.strokeStyle = dragonBorder;
+    dragon.forEach(dragonPart => {
+        ctx.fillRect(dragonPart.x, dragonPart.y, unitSize, unitSize);
+        ctx.strokeRect(dragonPart.x, dragonPart.y, unitSize, unitSize);
+    })
+};
 function changeDirection (){};
 function checkGameOver (){};
 function displayGameOver (){};
