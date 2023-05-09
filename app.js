@@ -1,4 +1,4 @@
-//make sure canvas in initialized after page is loaded
+//make sure canvas is initialized after page is loaded
 const canvas = document.getElementById("gameBoard");
 const ctx = canvas.getContext("2d");
 const gameWidth = canvas.width;
@@ -139,6 +139,50 @@ function changeDirection (event){
             break;
     }
 };
-function checkGameOver (){};
-function displayGameOver (){};
-function resetGame (){};
+
+//Game end
+function checkGameOver (){
+    //Dragon touches border, game is over
+    switch(true){
+        case (dragon[0].x < 0):
+            running = false;
+            break;
+        case (dragon[0].x >= gameWidth):
+            running = false;
+            break;
+        case (dragon[0].y < 0):
+            running = false;
+            break;
+        case (dragon[0].y >= gameHeight):
+            running = false;
+            break;
+    }
+    //use for loop to iterate over body parts. When dragon eats itself, game is over.
+    for(let i = 1; i < dragon.length; i += 1){
+        if(dragon[i].x == dragon[0].x && dragon[i].y == dragon[0].y){
+            running = false;
+        }
+    }
+};
+function displayGameOver (){
+    ctx.font = '50px Modak';
+    ctx.fillStyle = 'red';
+    ctx.textAlign = "center";
+    ctx.fillText('GAME OVER', gameWidth / 2, gameHeight / 2);
+    running = false;
+};
+
+//game should reset body parts and food item
+function resetGame (){
+    score = 0;
+    xSpeed = unitSize;
+    ySpeed = 0;
+    dragon = [
+        {x:unitSize * 4, y:0},
+        {x:unitSize * 3, y:0},
+        {x:unitSize * 2, y:0},
+        {x:unitSize, y:0},
+        {x:0, y:0}
+    ];
+    gameStart();
+};
