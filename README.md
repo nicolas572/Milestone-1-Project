@@ -97,6 +97,6 @@ XXX IMPORTANT! USE THIS SPACE FOR THE SCHEDULE WE END UP MAKING IN CLASS AND ADD
 | Mon. 5/01 | Create GitHub repository. Complete README.md. |
 | Wed. 5/03 | Diagnose Errors |
 | Sat. 5/06 | Fix errors, game progress |
-| Mon. 5/08 |      |
-| Wed. 5/10 |      |
+| Mon. 5/08 | Dragon now moves with arrow keys |
+| Wed. 5/10 | Styling |
 | Sat. 5/13 | Deploy to GitHub Pages. Submit completed project. Project presentations. |

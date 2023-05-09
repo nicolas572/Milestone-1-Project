@@ -79,7 +79,23 @@ function drawFood (){
     ctx.fillStyle = foodColor;
     ctx.fillRect(foodX, foodY, unitSize, unitSize);
 };
-function moveDragon (){};
+
+//dragon grows when eating dragonfruit
+function moveDragon (){
+    const head = {x: dragon[0].x + xSpeed,
+                  y: dragon[0].y + ySpeed};
+    
+    dragon.unshift(head);
+//when dragon eats food, they grow 1 unitSize
+    if(dragon[0].x == foodX && dragon[0].y == foodY){
+        score+=1;
+        scoreText.textContent = score;
+        createFood();
+    }
+    else{
+        dragon.pop();
+    }
+};
 
 //create dragon!
 function drawDragon (){
@@ -90,7 +106,39 @@ function drawDragon (){
         ctx.strokeRect(dragonPart.x, dragonPart.y, unitSize, unitSize);
     })
 };
-function changeDirection (){};
+function changeDirection (event){
+    const arrowPressed = event.keyCode;
+
+    const arrowUp = (ySpeed == -unitSize);
+    const arrowDown = (ySpeed == unitSize);
+    const arrowLeft = (xSpeed == -unitSize);
+    const arrowRight = (xSpeed == unitSize);
+
+    const LEFT = 37;
+    const UP = 38;
+    const RIGHT = 39;
+    const DOWN = 40;
+
+//dragon cannot move immediately into itself
+    switch(true){
+        case(arrowPressed == LEFT && !arrowRight):
+            xSpeed = -unitSize;
+            ySpeed = 0;
+            break;
+        case(arrowPressed == UP && !arrowDown):
+            xSpeed = 0;
+            ySpeed = -unitSize;
+            break;
+        case(arrowPressed == RIGHT && !arrowLeft):
+            xSpeed = unitSize;
+            ySpeed = 0;
+            break;
+        case(arrowPressed == DOWN && !arrowUp):
+            xSpeed = 0;
+            ySpeed = unitSize;
+            break;
+    }
+};
 function checkGameOver (){};
 function displayGameOver (){};
 function resetGame (){};
