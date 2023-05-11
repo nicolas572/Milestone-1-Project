@@ -30,7 +30,7 @@ Complete the planning sections below and include them in the README.md of your p
 
 ## Deployment
 
-The web game is deployed at <YOUR DEPLOYED GITHUB.IO URL GOES HERE>.
+The web game is deployed at <https://nicolas572.github.io/Milestone-1-Project/>.
 
 
 ## Project Description
