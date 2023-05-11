@@ -1,5 +1,3 @@
-XXX IMPORTANT! DELETE THIS LINE AND THIS SECTION (LINES 3-10) BEFORE YOU REVISE YOUR README AND SUBMIT YOUR FINAL PROJECT XXX
-
 ## General Requirements
 
 - This is a solo project! (Just to clarify, you may do the same game as another student, but you may not work together.)
@@ -8,9 +6,6 @@ XXX IMPORTANT! DELETE THIS LINE AND THIS SECTION (LINES 3-10) BEFORE YOU REVISE 
 - This game must be tracked in Github, with a minimum of 10 commits.
 - Ideally, put your empty project up on Github on day one of development and aim for multiple commits per day.
 - This game must be deployed on Github Pages or another location.
-
-
-XXX IMPORTANT! DELETE THIS LINE AND THIS SECTION (LINES 15-26) BEFORE YOU REVISE YOUR README AND SUBMIT YOUR FINAL PROJECT XXX
 
 ## Game Requirements
 
@@ -24,9 +19,6 @@ XXX IMPORTANT! DELETE THIS LINE AND THIS SECTION (LINES 15-26) BEFORE YOU REVISE
 - Effort must be spent on styling and appearance.
 - The HTML code should use sematic tags.
 - The GitHub repository for your game should have a README.md that describes the inspiration for the game, explains the controls and how to play the game, lists the technologies used to build the game, and addresses any outstanding bugs or unfinished functionality.
-
-
-XXX IMPORTANT! DELETE THIS LINE AND THE SECTION (LINES 31-37 SO FAR) BEFORE YOU REVISE YOUR README AND SUBMIT YOUR FINAL PROJECT XXX
 
 # NYU-SD-01 Milestone Project: Planning
 
@@ -50,45 +42,29 @@ A snake-style game, in the form of a dragon, a timeless favorite!
 
 ```
 
--Start at center of screen
+-Start at top-left of screen
 -Use of all arrow keys
 -Eat dragonfruit
 -Dragon grows longer
--Player wins once they've eaten 20 dragonfruits
--Player loses if they eat themselves
+-Player wins once they've eaten 50 dragonfruits
+-Player loses if they collide into themselves
 -Player loses if they collide into wall
 
 
 ```
 
-## Deliverables
-
->Even if you have a great big idea for a game, it's important to scope this project according to what you can get done in the next two weeks. We'll refer to your project completion goal using the term **[Minimum Viable Product](https://en.wikipedia.org/wiki/Minimum_viable_product) (MVP)** -- a list of the criteria needed to "ship" a playable version of your game that meets the project requirements.
->
->*Don't lose sight of your big ideas, though! Keep a list of further improvements you can refer to as **Post-MVP Ideas**. You might finish some before our project time is done, or you might work on them later!*
->
-> For your README, delete this blockquote and fill in the lists below.
-
-
 ### MVP Criteria
 
-XXX IMPORTANT! Replace the text below as you list the MVP criteria you met AND THEN DELETE THIS LINE XXX
-
-- One thing my game must do to meet my minimum standard.
-- Another thing.
-- Etc.
+- Dragon grows when eating food
+- Game over when collisions happen
+- Reset game button
 
 
 ### Post-MVP Plans
 
-XXX IMPORTANT! Replace the text below as you list what you would do to improve the game post-MVP AND THEN DELETE THIS LINE XXX
-
-- One great idea I hope to be able to add in before the project deadline.
-- Another that will be a stretch.
-- Something else I don't technically know how to do... *yet*. :)
-
-
-XXX IMPORTANT! USE THIS SPACE FOR THE SCHEDULE WE END UP MAKING IN CLASS AND ADD ANY PERSONAL INFO AS NEEDED. THE README IS NOT JUST A PLACE TO TELL OTHERS ABOUT THE CODE IN YOUR APP, BUT ALSO IT CAN BE A PART OF THE WAY YOU PLAN AND KEEP TRACK OF YOUR PROGRESS MAKING YOUR APP. BUT MAKE SURE TO DELETE ALL OF TEXT BELOW THIS LINE BEFORE YOU SUBMIT THE PROJECT FINALLY XXX
+- SoundFx for when you eat food or lose game
+- Make food an image instead of color
+- Add background music
 
 ## Project Planning
 
