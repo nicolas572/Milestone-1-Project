@@ -7,8 +7,8 @@ const gameHeight = canvas.height;
 
 const scoreText = document.querySelector("#scoreText");
 const resetBtn = document.querySelector("#resetBtn");
-const boardBackground = 'white';
-const dragonColor = 'green';
+const boardBackground = 'lightBlue';
+const dragonColor = 'darkGrey';
 const dragonBorder = 'black';
 const foodColor = 'pink';
 const unitSize = 25;
@@ -95,6 +95,11 @@ function moveDragon (){
     else{
         dragon.pop();
     }
+    //if player reaches a score of 50, call gameWin, player may still keep going
+    if(score === 2) {
+        running = true;
+        gameWin();
+    }
 };
 
 //create dragon!
@@ -170,6 +175,14 @@ function displayGameOver (){
     ctx.textAlign = "center";
     ctx.fillText('GAME OVER', gameWidth / 2, gameHeight / 2);
     running = false;
+};
+
+//Display win game when you reach score of 50
+function gameWin(){
+    ctx.font = '50px Modak';
+    ctx.fillStyle = 'gold';
+    ctx.textAlign = 'center';
+    ctx.fillText('YOU WON', gameWidth / 2, gameHeight / 2);
 };
 
 //game should reset body parts and food item
