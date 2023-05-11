@@ -96,7 +96,7 @@ function moveDragon (){
         dragon.pop();
     }
     //if player reaches a score of 50, call gameWin, player may still keep going
-    if(score === 2) {
+    if(score === 50) {
         running = true;
         gameWin();
     }
