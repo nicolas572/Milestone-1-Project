@@ -65,6 +65,7 @@ A snake-style game, in the form of a dragon, a timeless favorite!
 - SoundFx for when you eat food or lose game
 - Make food an image instead of color
 - Add background music
+- Keep high score
 
 ## Project Planning
 
@@ -76,3 +77,7 @@ A snake-style game, in the form of a dragon, a timeless favorite!
 | Mon. 5/08 | Dragon now moves with arrow keys, game resets |
 | Wed. 5/10 | Styling, last touches |
 | Sat. 5/13 | Deploy to GitHub Pages. Submit completed project. Project presentations. |
+
+## Atttributions
+
+-Dustin Williams (Quality Manager, Advanced Test Equipment Corporation)
