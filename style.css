@@ -10,6 +10,11 @@ h1 {
     color: orange;
 }
 
+p {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 #gameContainer {
     text-align: center;
 }
@@ -19,12 +24,12 @@ h1 {
 }
 
 #scoreText {
-    font-family: Modak;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 80px;
 }
 
 #resetBtn {
-    font-family: Modak;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 25px;
     width: 100px;
     height: 50px;
