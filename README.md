@@ -83,3 +83,4 @@ A snake-style game, in the form of a dragon, a timeless favorite!
 - Dustin Williams (Quality Manager, Advanced Test Equipment Corporation)
 - W3 schools for Javascript switch statements
 - CHAT.gpt for error diagnosis
+- Canva for background images
